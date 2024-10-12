@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #141414;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            background-color: #1abc9c;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .showcase {
+            padding: 5rem 0;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        .showcase h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1abc9c;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 2rem;
+        }
+
+        .project {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #999;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        #bg-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Media Queries for Mobile Screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .btn {
+                font-size: 1.2rem;
+                padding: 0.8rem 1.5rem;
+            }
+
+            .showcase h2 {
+                font-size: 2rem;
+            }
+
+            .project h3 {
+                font-size: 1.5rem;
+            }
+
+            .project p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Media Queries for Extra Small Screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .showcase h2 {
+                font-size: 1.8rem;
+            }
+
+            .project h3 {
+                font-size: 1.3rem;
+            }
+
+            .project p {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Media Queries for Mobile Screens */
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+
+        /* Media Queries for Extra Small Screens */
+        @media (max-width: 480px) {
+            .projects {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 3D Background Container -->
+    <div id="bg-container"></div>
+
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>Welcome to Sulphuric Acid Projects</h1>
+            <p>Explore my JavaScript projects below</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </header>
+
+    <!-- Showcase Section -->
+    <section id="projects" class="showcase">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <a href="https://analog-digitalclock-7dff7f.netlify.app">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Analog Digital Clock</p>
+                </div>
+            </a>
+            <a href="https://sulphuric-qrcodegen-1dff1f.netlify.app">
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>QR code Generator (Javascript)</p>
+                </div>
+            </a>
+            <a href="https://sameer-portfolio-1dff1f.netlify.app">
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Responsive Portfolio (*)</p>
+                </div>
+            </a>
+            <a href="https://animated-button-1dff1f.netlify.app">
+                <div class="project">
+                    <h3>Project 4</h3>
+                    <p>Animated Order Button</p>
+                </div>
+            </a>
+            <a href="https://meme-generator-1dff1f.netlify.app">
+                <div class="project">
+                    <h3>Project 5</h3>
+                    <p>Meme Generator Pro</p>
+                </div>
+            </a>
+            <a href="https://sony-console-1dff1f.netlify.app">
+                <div class="project">
+                    <h3>Project 6</h3>
+                    <p>Sony PS-5 Console Animated Page</p>
+                </div>
+            </a>
+            <a href="https://assistant-jarvis-1dff1f.netlify.app">
+                <div class="project">
+                    <h3>Project 7</h3>
+                    <p>My Personal Assistant (Jarvis)</p>
+                </div>
+            </a>
+            <a href="https://cursor-moving-1dff1f.netlify.app">
+                <div class="project">
+                    <h3>Project 8</h3>
+                    <p>Cursor Moving Project</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sulphuric Acid Projects | All rights reserved. <br><a
+                href="https://github.com/Sameer46-coding?tab=repositories"
+                style="color: white;">https://github.com/Sameer46-coding?tab=repositories</a></p>
+    </footer>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script>
+        // 3D Scene Setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('bg-container').appendChild(renderer.domElement);
+
+        // 3D Sphere Background
+        const geometry = new THREE.SphereGeometry(500, 64, 64);
+        const textureLoader = new THREE.TextureLoader();
+        const material = new THREE.MeshBasicMaterial({
+            map: textureLoader.load('https://threejs.org/examples/textures/earth.jpg'),
+            side: THREE.BackSide
+        });
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+        // Create Star-like points
+        const starGeometry = new THREE.BufferGeometry();
+        const starMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 2 });
+
+        const starVertices = [];
+        for (let i = 0; i < 1000; i++) {
+            const x = (Math.random() - 0.5) * 2000;
+            const y = (Math.random() - 0.5) * 2000;
+            const z = (Math.random() - 0.5) * 2000;
+            starVertices.push(x, y, z);
+        }
+
+        starGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starVertices, 3));
+        const stars = new THREE.Points(starGeometry, starMaterial);
+        scene.add(stars);
+
+        // Camera Position
+        camera.position.z = 10;
+
+        // Animation
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Rotate the sphere and stars
+            sphere.rotation.y += 0.002;
+            stars.rotation.y += 0.001;
+
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Resize Function
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+
+
+        // Adjust camera position on resize for better mobile experience
+        window.addEventListener('resize', () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+
+            if (width < 480) {
+                camera.position.z = 8; // Closer for small screens
+            } else {
+                camera.position.z = 10; // Default for larger screens
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
